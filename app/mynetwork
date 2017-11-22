@@ -1,1 +1,5 @@
-
+###
+# IP Whitelist
+##
+# Put one per line
+# Host IP or Host Network witch cidr
