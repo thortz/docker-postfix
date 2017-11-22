@@ -3,3 +3,5 @@
 ##
 # Put one per line
 # Host IP or Host Network witch cidr
+127.0.0.1
+192.168.0.0/24

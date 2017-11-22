@@ -6,6 +6,11 @@
 - /app/mynetwork 	= IP whitelist
 - /app/starup.sh 	= docker launch script
 
+## Configuration
+- Edit : /app/mailname with your Domaine Name
+- Edit : main.cf "myhostname = smtp.my.domain.local"
+- Add your IP to /app/mynetwork
+
 ## BUILD
 - sudo docker volume create docker-smtp-spool
 - sudo docker build -t docker-smtp .
