@@ -19,7 +19,7 @@ RUN sed -i 's/^#\(SYSLOGNG_OPTS="--no-caps"\)/\1/g' /etc/default/syslog-ng
 # Preconf for setup posfix
 
 RUN echo "postfix postfix/main_mailer_type string Internet site" > setuppostfix.txt
-RUN echo "postfix postfix/mailname string smtp.btp-consultants.fr" >> setuppostfix.txt
+RUN echo "postfix postfix/mailname string smtp.my.domain" >> setuppostfix.txt
 RUN debconf-set-selections setuppostfix.txt
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q postfix
 
